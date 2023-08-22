@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bienvenido</title>
+</head>
+
+<body>
+<h1>Hola bienvenido
+	<span id="nombre"></span>
+	<span id="ape"></span>
+</h1>
+<h2>Esta es un documento HTML en Spring</h2>
+
+<form>
+  <label for="nombreInput">Ingresa tu nombre:</label>
+  <input type="text" id="PoneNOm" placeholder="Tu nombre aquí">
+  <button type="button" onclick="mostrarNombre()">Mostrar Nombre</button>
+</form>
+<form>
+  <label for="nombreInput">Ingresa tu apellido:</label>
+  <input type="text" id="PonApe" placeholder="Tu apellido aqui">
+  <button type="button" onclick="mostrarApe()">Mostrar apellido</button>
+</form>
+<div><a href="/inicio">Regresar</a></div>
+
+<script>
+function mostrarNombre() {
+  var nombre = document.getElementById("PoneNOm").value;
+  document.getElementById("nombre").textContent = nombre;
+}
+function mostrarApe() {
+  var nombre = document.getElementById("PonApe").value;
+  document.getElementById("ape").textContent = nombre;
+}
+</script>
+</body>
+</html>
